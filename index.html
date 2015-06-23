@@ -1,20 +1,19 @@
 ---
 layout: workshop
 root: .
-venue: FIXME      # brief name of host site
-address: FIXME    # street address of home location
-country: FIXME    # country (hyphenated if need be, like 'United-Kingdom')
-language: FIXME   # language code like 'en' or 'fr'
-latlng: FIXME     # fractional latitude and longitude like 41.7901128,-87.6007318
-humandate: FIXME  # use the format 'Feb 17-18, 2020' (without the quotes)
-humantime: FIXME  # use the format '9:00 am - 4:30 pm' (without the quotes)
-startdate: FIXME  # use YYYY-MM-DD format like 2015-01-01
-enddate: FIXME    # use YYYY-MM-DD format like 2015-01-02
-instructor: FIXME # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: FIXME    # contact email address for workshop organizer
-etherpad:   # optional (insert the URL for your Etherpad if you're using one)
-eventbrite: # optional (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
+venue: Indonesia Biodiversity Research Center, Bali      # brief name of host site
+address: Praja Hotel, Renon, Denpasar    # street address of home location
+country: Indonesia    # country (hyphenated if need be, like 'United-Kingdom')
+language: en   # language code like 'en' or 'fr'
+latlng: -8.671308,115.239431     # fractional latitude and longitude like 41.7901128,-87.6007318
+humandate: Aug 3-4, 2015  # use the format 'Feb 17-18, 2020' (without the quotes)
+humantime: 11:00 am - 4:00 pm  # use the format '9:00 am - 4:30 pm' (without the quotes)
+startdate: 2015-08-03  # use YYYY-MM-DD format like 2015-01-01
+enddate: 2015-08-04    # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Eric Crandall"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["John Deck","Katja Lehmann","Cynthia Riginos","Patricia Cockett"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: eric.d.crandall@gmail.com    # contact email address for workshop organizer
+etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (insert the URL for your Etherpad if you're using one)
 ---
 <!--
   HEADER
@@ -51,7 +50,12 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
+  These lessons are adapted from <a href="{{site.swc_site}}">Software 
+  Carpentry</a>'s GitHub template for use in our DIPnet workshop. We
+  gratefully thank Software Carpentry and acknowledge that the DIPnet
+  workshop is not officially certified by them. 
+  
+  Software Carpentry's mission
   is to help scientists and engineers get more research done in less
   time and with less pain by teaching them basic lab skills for
   scientific computing.  This hands-on workshop will cover basic
@@ -76,7 +80,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is aimed at biology faculty from Southeast Asia
 </p>
 
 <!--
@@ -144,9 +148,9 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>11:00</td>  <td>Course setup and troubleshooting</td> </tr>
+      <tr> <td>13:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
@@ -155,10 +159,10 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
+      <tr> <td>10:30</td>  <td>Introduction to regular expressions</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch</td> </tr>
+      <tr> <td>1:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td>Introduction to R</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -219,6 +223,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
       <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
     </ul>
   </div>
+  <!--
   <div class="col-md-6">
     <h3>Programming in Python</h3>
     <ul>
@@ -232,7 +237,8 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
       <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
+  -->
+  
   <div class="col-md-6">
     <h3>Programming in R</h3>
     <ul>
@@ -244,10 +250,11 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
       <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
     </ul>
   </div>
-  -->
+
 </div>
 
 <div class="row">
+<!--
   <div class="col-md-6">
     <h3>Version Control with Git</h3>
     <ul>
@@ -277,7 +284,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     </ul>
   </div>
 </div>
-
+-->
 <hr/>
 
 <!--
@@ -344,7 +351,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     </div>
   </div>
 </div> <!-- End of 'shell' section. -->
-
+<!--
 <div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
   <h3>Git</h3>
@@ -391,6 +398,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     </div>
   </div>
 </div> <!-- End of 'Git' section. -->
+-->
 
 <div id="editor"> <!-- Start of 'editor' section. -->
   <h3>Text Editor</h3>
@@ -409,7 +417,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
       <p>
-        nano is a basic editor and the default that instructors use in the workshop.
+        nano is a basic editor
         To install it, 
         download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
         and double click on the file to run it.
@@ -427,11 +435,10 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     <div class="col-md-4">
       <h4 id="editor-macosx">Mac OS X</h4>
       <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It should be pre-installed.
+        nano is a basic editor that is pre-installed in Linux and Mac.
       </p>
       <p>
-        Others editors that you can use are
+        Text editors that you can use are
         <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
       </p>
@@ -451,7 +458,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     </div>
   </div>
 </div> <!-- End of 'editor' section. -->
-
+<!--
 <div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the IPython notebook.
@@ -547,7 +554,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     </div>
   </div>
 </div> <!-- End of 'Python' section. -->
-
+-->
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
 
@@ -592,7 +599,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     </div>
   </div>
 </div> <!-- End of 'R' section. -->
-
+<!--
 <div id="sql"> <!-- Start of 'SQLite' section. -->
   <h3>SQLite</h3>
 
@@ -625,8 +632,8 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     </div>
   </div>
 </div> <!-- End of 'SQLite' section. -->
+-->
 
-<!--
   Uncomment this section if you are using our virtual machine.
 
 <div id="vm">
@@ -652,4 +659,4 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     </li>
   </ol>
 </div>
--->
+
