@@ -2,7 +2,7 @@
 layout: workshop
 root: .
 venue: Indonesia Biodiversity Research Center, Bali      # brief name of host site
-address: Praja Hotel, Renon, Denpasar    # street address of home location
+address: Praja Hotel, Renon, Denpasar, Bali    # street address of home location
 country: Indonesia    # country (hyphenated if need be, like 'United-Kingdom')
 language: en   # language code like 'en' or 'fr'
 latlng: -8.671308,115.239431     # fractional latitude and longitude like 41.7901128,-87.6007318
@@ -53,8 +53,9 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
   These lessons are adapted from <a href="{{site.swc_site}}">Software 
   Carpentry</a>'s GitHub template for use in our DIPnet workshop. We
   gratefully thank Software Carpentry and acknowledge that the DIPnet
-  workshop is not officially certified by them. 
-  
+  workshop is not officially certified by them.
+</p> 
+<p>
   Software Carpentry's mission
   is to help scientists and engineers get more research done in less
   time and with less pain by teaching them basic lab skills for
@@ -149,10 +150,10 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     <h3>Day 1</h3>
     <table class="table table-striped">
       <tr> <td>11:00</td>  <td>Course setup and troubleshooting</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch</td> </tr>
       <tr> <td>13:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>14:30</td>  <td>Unix continued</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
@@ -161,8 +162,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     <table class="table table-striped">
       <tr> <td>10:30</td>  <td>Introduction to regular expressions</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch</td> </tr>
-      <tr> <td>1:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Introduction to R</td> </tr>
+      <tr> <td>13:00</td>  <td>Programming with R</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -221,6 +221,13 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
       <li>Creating and running shell scripts</li>
       <li>Finding things</li>
       <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+  	<h3>Regular Expressions</h3>
+    <ul>
+      <li>Writing Search Patterns</li>
+      <li>Writing Replacement Patterns</li>
     </ul>
   </div>
   <!--
@@ -351,6 +358,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     </div>
   </div>
 </div> <!-- End of 'shell' section. -->
+
 <!--
 <div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
@@ -398,6 +406,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     </div>
   </div>
 </div> <!-- End of 'Git' section. -->
+
 -->
 
 <div id="editor"> <!-- Start of 'editor' section. -->
@@ -417,7 +426,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
       <p>
-        nano is a basic editor
+        Nano is a basic text editor.
         To install it, 
         download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
         and double click on the file to run it.
@@ -458,6 +467,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     </div>
   </div>
 </div> <!-- End of 'editor' section. -->
+
 <!--
 <div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
@@ -555,6 +565,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
   </div>
 </div> <!-- End of 'Python' section. -->
 -->
+
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
 
@@ -599,6 +610,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     </div>
   </div>
 </div> <!-- End of 'R' section. -->
+
 <!--
 <div id="sql"> <!-- Start of 'SQLite' section. -->
   <h3>SQLite</h3>
