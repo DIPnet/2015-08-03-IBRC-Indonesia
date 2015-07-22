@@ -149,21 +149,24 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>10:30</td>  <td>Introduction, tools setup and troubleshooting</td> </tr>
+      <tr> <td>10:00</td>  <td>Introduction, software setup and troubleshooting</td> </tr>
+      <tr> <td>11:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch</td> </tr>
-      <tr> <td>13:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>15:00</td>  <td>Automating tasks with the Unix shell - continued</td> </tr>
-      <tr> <td>16:30</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>13:30</td>  <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>15:00</td>  <td>Coffee</td> </tr>
+      <tr> <td>15:30</td>  <td>Automating tasks with the Unix shell - continued</td> </tr>
+      <tr> <td>17:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>10:30</td>  <td>Programming with R</td> </tr>
+      <tr> <td>9:00</td>  <td>Programming with R</td> </tr>
+      <tr> <td>10:30</td>  <td>Break</td> </tr>
+       <tr> <td>10:45</td>  <td>Programming with R - continued</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch</td> </tr>
-      <tr> <td>13:00</td>  <td>Programming with R - continued</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>13:30</td>  <td>Programming with R - continued</td> </tr>
+      <tr> <td>14:30</td>  <td>Break</td> </tr>
       <tr> <td>15:00</td>  <td>Programming with R - continued</td> </tr>
       <tr> <td>16:30</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -316,16 +319,30 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
 
   <p>
     Bash is a commonly-used shell that gives you the power to do simple
-    tasks more quickly.
+    tasks more quickly. We will be using 
+    <a href= "http://environmentalomics.org/bio-linux/">Biolinux</a> as a common platform for learning. Biolinux is a distribution of the popular and free Ubuntu Linux
+    operating system, but includes more than 250 useful bioinformatic programs and packages.
+    You may install and run Biolinux on your computer in a variety of ways:
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
       <p>
-        Install Git for Windows by downloading and running
+        We will provide Biolinux on USB drives (generously provided by Katja Lehmann and the UK National Environment Research Council (NERC).
+        You may boot your Windows computer directly from these drives to run Biolinux. Please refer <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> for instructions ahead of time. 
+        <strong>You will need to figure out how to boot your computer from a USB drive ahead of time. Please do so before class starts on Monday</strong></p>
+      <p>
+        Alternatively, you may install <a href="http://virtualbox.org">VirtualBox</a> (free emulation software) and install Biolinux on this. This will allow you to run Windows and Biolinux simultaneously.
+        See instructions <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> (Running Biolinux as a VM with VirtualBox). This option requires 40GB of free disk space, and a 4GB download.
+        Eric Crandall will have the .ova file available on Sunday and Monday morning for those who are interested in this option.</p>
+      <p>
+        Only if neither of the above options work, please consider installing Git for Windows by downloading and running
         <a href="http://msysgit.github.io/">the installer</a>.
-        This will provide you with both Git and Bash in the Git Bash program.
+        This will provide you with both Git and Bash in the Git Bash program.</p>
+       <p>
+        Finally, if none of these options work, there is the possibility of using the <a href="https://resbaz.cloud.edu.au"> ResBaz</a> platform, which will allow you to use R and Unix from your browser.
+        Please talk to an instructor if you feel this option is for you.
       </p>
     </div>
     <div class="col-md-4">
