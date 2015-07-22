@@ -320,26 +320,26 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
   <p>
     Bash is a commonly-used shell that gives you the power to do simple
     tasks more quickly. We will be using 
-    <a href= "http://environmentalomics.org/bio-linux/">Biolinux</a> as a common platform for learning. Biolinux is a distribution of the popular and free Ubuntu Linux
-    operating system, but includes more than 250 useful bioinformatic programs and packages.
-    You may install and run Biolinux on your computer in a variety of ways:
+    <a href= "http://environmentalomics.org/bio-linux/">Bio-Linux</a> as a common platform for learning. Bio-Linux is a distribution of the popular and free Ubuntu Linux
+    operating system, but includes more than 250 useful bioinformatic programs and packages. We will be using Bio-Linux for the Introduction to the Unix Shell, but also for lessons on RAD and Metagenomic pipelines on Thursday and Friday.
+    You may install and run Bio-Linux on your computer in a variety of ways:
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
       <p>
-        We will provide Biolinux on USB drives (generously provided by Katja Lehmann and the UK National Environment Research Council (NERC).
-        You may boot your Windows computer directly from these drives to run Biolinux. Please refer <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> for instructions ahead of time. 
+        We will provide Bio-Linux on USB drives (generously provided by Katja Lehmann and the UK National Environment Research Council (NERC).
+        You may boot your Windows computer directly from these drives to run Bio-Linux. Please refer <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> for instructions ahead of time. 
         <strong>You will need to figure out how to boot your computer from a USB drive ahead of time. Please do so before class starts on Monday</strong></p>
       <p>
-        Alternatively, you may install <a href="http://virtualbox.org">VirtualBox</a> (free emulation software) and install Biolinux on this. This will allow you to run Windows and Biolinux simultaneously.
-        See instructions <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> (Running Biolinux as a VM with VirtualBox). This option requires 40GB of free disk space, and a 4GB download.
+        Alternatively, you may install <a href="http://virtualbox.org">VirtualBox</a> (free emulation software) and install Bio-Linux on this. This will allow you to run Windows and Bio-Linux simultaneously.
+        See instructions <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> (Running Bio-Linux as a VM with VirtualBox). This option requires 40GB of free disk space, and a 4GB download.
         Eric Crandall will have the .ova file available on Sunday and Monday morning for those who are interested in this option.</p>
       <p>
         Only if neither of the above options work, please consider installing Git for Windows by downloading and running
         <a href="http://msysgit.github.io/">the installer</a>.
-        This will provide you with both Git and Bash in the Git Bash program.</p>
+        This will provide you with both Git and Bash in the Git Bash program. However, you will need to install a number of additional programs if you want to use your computer  for lessons on Metagenomics and RAD pipelines.</p>
        <p>
         Finally, if none of these options work, there is the possibility of using the <a href="https://resbaz.cloud.edu.au"> ResBaz</a> platform, which will allow you to use R and Unix from your browser.
         Please talk to an instructor if you feel this option is for you.
@@ -348,8 +348,13 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     <div class="col-md-4">
       <h4 id="shell-macosx">Mac OS X</h4>
       <p>
-        The default shell in all versions of Mac OS X is bash, so no
-        need to install anything.  You access bash from the Terminal
+        The USB drives cannot be booted from a Mac. We therefore recommend that you install <a href="http://virtualbox.org">VirtualBox</a> (free emulation software) and install Bio-Linux on this. This will allow you to run Windows and Bio-Linux simultaneously.
+        See instructions <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> (Running Bio-Linux as a VM with VirtualBox). This option requires 40GB of free disk space, and a 4GB download.
+        Eric Crandall will have the .ova file available on Sunday and Monday morning for those who are interested in this option.</p>
+       <p> 
+        Fortunately, the default shell in all versions of Mac OS X is bash, so if you are not able to install Bio-Linux you can use this with no
+        need to install anything. However, you will need to install a number of additional programs if you want to use your computer  for lessons on Metagenomics and RAD pipelines. Please consult the instructors about this. 
+        You access bash from the Terminal
         (found in
         <code>/Applications/Utilities</code>).  You may want to keep
         Terminal in your dock for this workshop.
@@ -360,8 +365,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
       <p>
         The default shell is usually Bash, but if your
         machine is set up differently you can run it by opening a
-        terminal and typing <code>bash</code>.  There is no need to
-        install anything.
+        terminal and typing <code>bash</code>.  You will need to install a number of additional programs if you want to use your computer  for lessons on Metagenomics and RAD pipelines.  
       </p>
     </div>
   </div>
@@ -383,15 +387,10 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
+      
       <p>
-        Nano is a basic text editor.
-        To install it, 
-        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
-        and double click on the file to run it.
-        <strong>This installer requires an active internet connection.</strong>
-      </p>
-      <p>
-        Other editors that you can use are
+        Vim and Emacs are two basic editors that are pre-installed with Bio-Linux. They are a bit tricky to use.
+        There are a number of more user friendly editors that you can use, but they won't work if you are booted using a USB drive:
         <a href="http://notepad-plus-plus.org/">Notepad++</a> or
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
         <strong>Be aware that you must
@@ -402,10 +401,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     <div class="col-md-4">
       <h4 id="editor-macosx">Mac OS X</h4>
       <p>
-        nano is a basic editor that is pre-installed in Linux and Mac.
-      </p>
-      <p>
-        Text editors that you can use are
+        Besides Vim and Emacs, other text editors that you can use are:
         <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
       </p>
@@ -413,11 +409,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     <div class="col-md-4">
       <h4 id="editor-linux">Linux</h4>
       <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It should be pre-installed.
-      </p>
-      <p>
-        Others editors that you can use are
+        Besides Vim and Emacs, other text editors that you can use are:
         <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
         <a href="http://kate-editor.org/">Kate</a> or
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
@@ -476,17 +468,15 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
   <h3>Virtual Machine</h3>
 
   <p>
-    Some instructors prefer to have learners use a virtual machine (VM)
-    rather than install software on their own computers.  If your
-    instructors have chosen to do this, please:
+    Here are further instructions for downloading and installing VirtualBox
   </p>
   <ol>
     <li>
       Install <a href="https://www.virtualbox.org/">VirtualBox</a>.
     </li>
     <li>
-      Download our <a href="{{site.swc_vm}}">VM image</a>.
-      <strong>Warning:</strong> this file is >2 GByte, so please
+      Download the Bio-Linux <a href="http://nebc.nerc.ac.uk/downloads/bio-linux-8-latest.iso">VM image</a>.
+      <strong>Warning:</strong> this file is >4 GByte, so please
       download it <em>before</em> coming to your workshop.
     </li>
     <li>
