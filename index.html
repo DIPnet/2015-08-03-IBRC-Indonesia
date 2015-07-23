@@ -50,10 +50,10 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
   the pitch.
 -->
 <p>
-  These lessons are adapted from <a href="{{site.swc_site}}">Software 
-  Carpentry</a>'s GitHub template for use in our DIPnet workshop. We
-  gratefully thank Software Carpentry and acknowledge that the DIPnet
-  workshop is not officially certified by them.
+  These lessons are intended to give learners a general introduction to computational skills that are increasingly important for biologists to understand.
+  Do not expect to emerge from this workshop as an expert in computational biology! 
+  Our overall goal is to give you a foundation of skills that you can extend through using them in your research.
+
 </p> 
 <p>
   Software Carpentry's mission
@@ -152,8 +152,8 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
       <tr> <td>10:00</td>  <td>Introduction, software setup and troubleshooting</td> </tr>
       <tr> <td>11:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch</td> </tr>
-      <tr> <td>13:30</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>15:00</td>  <td>Coffee</td> </tr>
+      <tr> <td>13:30</td>  <td>Automating tasks with the Unix shell - continued</td> </tr>
+      <tr> <td>15:00</td>  <td>Break</td> </tr>
       <tr> <td>15:30</td>  <td>Automating tasks with the Unix shell - continued</td> </tr>
       <tr> <td>17:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -166,8 +166,8 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
        <tr> <td>10:45</td>  <td>Programming with R - continued</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch</td> </tr>
       <tr> <td>13:30</td>  <td>Programming with R - continued</td> </tr>
-      <tr> <td>14:30</td>  <td>Break</td> </tr>
-      <tr> <td>15:00</td>  <td>Programming with R - continued</td> </tr>
+      <tr> <td>15:00</td>  <td>Break</td> </tr>
+      <tr> <td>15:30</td>  <td>Programming with R - continued</td> </tr>
       <tr> <td>16:30</td>  <td>Wrap-up for Software Carpentry Workshop</td> </tr>
     </table>
   </div>
@@ -334,26 +334,27 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
         <strong>You will need to figure out how to boot your computer from a USB drive ahead of time. Please do so before class starts on Monday</strong></p>
       <p>
         Alternatively, you may install <a href="http://virtualbox.org">VirtualBox</a> (free emulation software) and install Bio-Linux on this. This will allow you to run Windows and Bio-Linux simultaneously.
-        See instructions <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> (Running Bio-Linux as a VM with VirtualBox). This option requires 40GB of free disk space, and a 4GB download.
-        Eric Crandall will have the .ova file available on Sunday and Monday morning for those who are interested in this option.</p>
+        See instructions <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> (Running Bio-Linux as a VM with VirtualBox) as well as below. This option requires 40GB of free disk space, and a 4GB download.
+        Eric Crandall will also have the 4GB .ova file available on Sunday and Monday morning for those who are interested in this option.</p>
       <p>
-        Only if neither of the above options work, please consider installing Git for Windows by downloading and running
+        If neither of the above options work, please consider installing Git for Windows by downloading and running
         <a href="http://msysgit.github.io/">the installer</a>.
-        This will provide you with both Git and Bash in the Git Bash program. However, you will need to install a number of additional programs if you want to use your computer  for lessons on Metagenomics and RAD pipelines.</p>
+        This will provide you with both Git and Bash in the Git Bash program. However, you will need to install a number of additional programs if you want to use your computer for lessons on Metagenomics and RAD pipelines.</p>
        <p>
-        Finally, if none of these options work, there is the possibility of using the <a href="https://resbaz.cloud.edu.au"> ResBaz</a> platform, which will allow you to use R and Unix from your browser.
-        Please talk to an instructor if you feel this option is for you (no other options will work).
+        Finally, there is the possibility of using the <a href="https://resbaz.cloud.edu.au"> ResBaz</a> platform, which will allow you to use R and Unix from your browser.
+        Please talk to an instructor if you feel this option is for you (you are unable to install anything).
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="shell-macosx">Mac OS X</h4>
       <p>
         The USB drives cannot be booted from a Mac. We therefore recommend that you install <a href="http://virtualbox.org">VirtualBox</a> (free emulation software) and install Bio-Linux on this. This will allow you to run Windows and Bio-Linux simultaneously.
-        See instructions <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> (Running Bio-Linux as a VM with VirtualBox). This option requires 40GB of free disk space, and a 4GB download.
+        See instructions <a href= "http://environmentalomics.org/bio-linux-installation/">here</a> (Running Bio-Linux as a VM with VirtualBox) as well as below. This option requires 40GB of free disk space, and a 4GB download.
         Eric Crandall will have the .ova file available on Sunday and Monday morning for those who are interested in this option.</p>
        <p> 
         Fortunately, the default shell in all versions of Mac OS X is bash, so if you are not able to install Bio-Linux you can use this with no
-        need to install anything. However, you will need to install a number of additional programs if you want to use your computer  for lessons on Metagenomics and RAD pipelines. Please consult the instructors about this. 
+        need to install anything. However, you will need to install a number of additional programs if you want to use your computer for lessons on Metagenomics and RAD pipelines. 
+        Please consult the instructors about this. 
         You access bash from the Terminal
         (found in
         <code>/Applications/Utilities</code>).  You may want to keep
@@ -389,8 +390,9 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
       <h4 id="editor-windows">Windows</h4>
       
       <p>
-        Vim and Emacs are two basic editors that are pre-installed with Bio-Linux. They are a bit tricky to use.
-        There are a number of more user friendly editors that you can use, but they won't work if you are booted using a USB drive:
+        Vim and Emacs are two basic editors that come in bash. They are a bit tricky to use.
+        If you are booted into Bio-Linux, then use <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>, the default windowed text editor, which is fairly user friendly.
+        There are a number of Windows user-friendly editors that you can use, but you won't be able to use them if you are booted using a USB drive:
         <a href="http://notepad-plus-plus.org/">Notepad++</a> or
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
         <strong>Be aware that you must
@@ -401,6 +403,7 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     <div class="col-md-4">
       <h4 id="editor-macosx">Mac OS X</h4>
       <p>
+        If you are booted into Bio-Linux, then use <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>, the default windowed text editor, which is fairly user friendly.
         Besides Vim and Emacs, other text editors that you can use are:
         <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
@@ -426,7 +429,10 @@ etherpad: https://etherpad.mozilla.org/2015-08-03-IBRC-Indonesia  # optional (in
     <a href="http://www.r-project.org">R</a> is a programming language
     that is especially powerful for data exploration, visualization, and
     statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
+    <a href="http://www.rstudio.com/">RStudio</a>. If installation doesn't work for you, 
+    there is the possibility of using the <a href="https://resbaz.cloud.edu.au"> ResBaz</a> platform, 
+    which will allow you to use R and Unix from your browser. 
+    Please talk to an instructor if you feel this option is for you.
   </p>
 
   <div class="row">
